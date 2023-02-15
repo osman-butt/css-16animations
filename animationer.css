@@ -127,3 +127,23 @@ Bolden bliver kæmpestor */
     transform: scale(10, 10);
   }
 }
+
+/* Animation 7: Fade out
+Bolden bliver kæmpestor */
+.fade_out {
+  animation-name: fade_out;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
