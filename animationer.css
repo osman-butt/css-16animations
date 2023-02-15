@@ -167,3 +167,27 @@ Bolden fader langsomt ind */
     opacity: 1;
   }
 }
+
+/* Animation 9: Rotation
+Bolden fader langsomt ind */
+.rotation {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
