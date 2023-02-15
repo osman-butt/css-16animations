@@ -211,7 +211,7 @@ Bolden drejer rundt om et punkt uden for sig selv */
 Bolden "lyser op" - brug en filter-effekt */
 .glow {
   animation-name: glow;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -222,7 +222,31 @@ Bolden "lyser op" - brug en filter-effekt */
     filter: drop-shadow(0 0 0 rgb(255, 234, 0));
   }
 
-  50% {
+  100% {
     filter: drop-shadow(0 0 16px rgb(255, 234, 0));
+  }
+}
+
+/* Animation 12: Blur to gray
+Bolden triller fra side til side 
+(kombinér to transform funktioner), 
+og den bliver gråtone og sløret 
+(kombinér to filter-effekter) */
+.blur_to_gray {
+  animation-name: blur_to_gray;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blur_to_gray {
+  0% {
+    transform: translate(-150%, 0) rotate(0);
+  }
+
+  100% {
+    transform: translate(150%, 0) rotate(160deg);
+    filter: grayscale(100%) blur(3px);
   }
 }
