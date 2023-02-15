@@ -56,3 +56,35 @@ Bolden falder ned, og bliver liggende */
     transform: translate(0, 135%);
   }
 }
+
+/* Animation 4: Pattern
+Bolden falder ned, og bliver liggende */
+.pattern {
+  animation-name: pattern;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pattern {
+  0% {
+    transform: translate(0, -135%);
+  }
+
+  25% {
+    transform: translate(150%, 0);
+  }
+
+  50% {
+    transform: translate(0, 135%);
+  }
+
+  75% {
+    transform: translate(-150%, 0);
+  }
+
+  100% {
+    transform: translate(0, -135%);
+  }
+}
