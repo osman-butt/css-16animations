@@ -64,7 +64,6 @@ Bolden falder ned, og bliver liggende */
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
 }
 
 @keyframes pattern {
@@ -86,5 +85,24 @@ Bolden falder ned, og bliver liggende */
 
   100% {
     transform: translate(0, -135%);
+  }
+}
+
+/* Animation 5: Zoom out
+Bolden bliver lillebitte */
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(0.1, 0.1);
   }
 }
