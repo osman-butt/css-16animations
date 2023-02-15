@@ -273,9 +273,7 @@ for at gøre opmærksom på at man skal klikke på den */
 }
 
 /* Animation 14: Overshoot
-Bolden triller lidt for langt, før den ender på rette plads.
-(Animationen her looper, men i din animation skal 
-bolden forblive liggende ude til højre!) */
+Bolden triller lidt for langt, før den ender på rette plads */
 .overshoot {
   animation-name: overshoot;
   animation-duration: 1s;
@@ -290,5 +288,54 @@ bolden forblive liggende ude til højre!) */
 
   100% {
     transform: translate(150%, 0) rotate(360deg);
+  }
+}
+
+/* Animation 15: Bounce
+Bolden falder ned, hopper lidt op igen og igen, 
+indtil den falder til ro. */
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-150%, -100%) rotate(0);
+  }
+  10% {
+    transform: translate(-122%, 150%) rotate(36deg);
+  }
+  20% {
+    transform: translate(-94%, -30%) rotate(72deg);
+  }
+  30% {
+    transform: translate(-66%, 150%) rotate(108deg);
+  }
+  40% {
+    transform: translate(-38%, 10%) rotate(144deg);
+  }
+  50% {
+    transform: translate(0%, 150%) rotate(180deg);
+  }
+  60% {
+    transform: translate(30%, 60%) rotate(216deg);
+  }
+  70% {
+    transform: translate(60%, 150%) rotate(252deg);
+  }
+  80% {
+    transform: translate(90%, 100%) rotate(288deg);
+  }
+  90% {
+    transform: translate(120%, 150%) rotate(324deg);
+  }
+  95% {
+    transform: translate(125%, 140%) rotate(348deg);
+  }
+  100% {
+    transform: translate(130%, 135%) rotate(360deg);
   }
 }
