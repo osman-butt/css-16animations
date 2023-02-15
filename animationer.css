@@ -169,7 +169,7 @@ Bolden fader langsomt ind */
 }
 
 /* Animation 9: Rotation
-Bolden fader langsomt ind */
+Bolden drejer rundt */
 .rotation {
   animation-name: rotation;
   animation-duration: 2s;
@@ -183,11 +183,26 @@ Bolden fader langsomt ind */
     transform: rotate(0);
   }
 
-  50% {
-    transform: rotate(180deg);
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation 10: Rotation II
+Bolden drejer rundt om et punkt uden for sig selv */
+.rotation2 {
+  animation-name: rotation2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0) translate(0, -135%);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translate(0, -135%);
   }
 }
