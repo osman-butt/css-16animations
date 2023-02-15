@@ -206,3 +206,23 @@ Bolden drejer rundt om et punkt uden for sig selv */
     transform: rotate(360deg) translate(0, -135%);
   }
 }
+
+/* Animation 11: Glow
+Bolden "lyser op" - brug en filter-effekt */
+.glow {
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 0 rgb(255, 234, 0));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 16px rgb(255, 234, 0));
+  }
+}
