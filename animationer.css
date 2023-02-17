@@ -196,6 +196,13 @@ Bolden drejer rundt om et punkt uden for sig selv */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+/* 
+transform-orgin: 50% 180%;
+translate 0% -140%; */
+/* eller
+transform: rotate(0) translate(0, -150%);
+transform: rotate(360) translate(0, -150%); */
+/* Hver opmærksom på rækkefølgen! */
 
 @keyframes rotation2 {
   0% {
